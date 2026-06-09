@@ -1,26 +1,17 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  /* Polices */
+  --font-family-raleway: var(--font-raleway);
+  --font-family-inter: var(--font-inter);
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Palette RentCar */
+  --color-rentcar-navy: #0f172a;
+  --color-rentcar-blue: #1d4ed8;
+  --color-rentcar-sky: #38bdf8;
+  --color-rentcar-accent: #f59e0b;
+  --color-rentcar-light: #f8fafc;
+  --color-rentcar-dark: #1e293b;
+  --color-rentcar-muted: #64748b;
+  --color-rentcar-white: #ffffff;
 }
