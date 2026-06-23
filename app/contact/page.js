@@ -1,6 +1,12 @@
 import Image from "next/image";
 import ContactForm from "../components/ContactForm";
 
+export const metadata = {
+  title: "Contact | Location de voitures en Tunisie",
+  description:
+    "Contactez-nous pour toute demande de location de voitures en Tunisie. Nous sommes à votre écoute.",
+};
+
 export default function ContactPage() {
   return (
     <main className="container mx-auto px-6 py-10">

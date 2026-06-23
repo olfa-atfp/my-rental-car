@@ -1,6 +1,25 @@
 import cars from "../../data/cars";
 import DetailsCarCard from "../../components/DetailsCarCard";
 
+export async function generateMetadata({ params }) {
+  const { id } = await params;
+
+  // Utilise directement le tableau cars
+  const car = cars.find((c) => c.id === Number(id));
+
+  if (!car) {
+    return {
+      title: "Véhicule introuvable",
+      description: "Véhicule introuvable",
+    };
+  }
+
+  return {
+    title: `${car.marque} - Location`,
+    description: `Réservez ${car.marque}`,
+  };
+}
+
 export default async function CarDetailsPage({ params }) {
   //  AWAIT params ICI !
   const { id } = await params;

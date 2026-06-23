@@ -23,6 +23,9 @@ const inter = Inter({
 export const metadata = {
   title: "RentCar – Location de voitures premium",
   description: "Louez la voiture de vos rêves en quelques clics.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 // --- Layout principal ---
